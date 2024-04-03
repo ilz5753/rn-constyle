@@ -1,0 +1,67 @@
+{
+  "name": "@ilz5753/rn-constyle",
+  "version": "0.0.1",
+  "description": "Effortlessly create, combine, and manage React Native styles using shorthand properties and helpful utility functions.",
+  "main": "lib/commonjs/index",
+  "module": "lib/module/index",
+  "types": "lib/typescript/src/index.d.ts",
+  "react-native": "src/index",
+  "source": "src/index",
+  "files": [
+    "src",
+    "lib"
+  ],
+  "keywords": [
+    "react-native",
+    "ios",
+    "android",
+    "style"
+  ],
+  "scripts": {
+    "prepare": "bob build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilz5753/rn-constyle.git"
+  },
+  "author": "Mehdi abdollahi <mehdi.abdollahi3578@gmail.com> (https://github.com/ilz5753)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ilz5753/rn-constyle/issues"
+  },
+  "homepage": "https://github.com/ilz5753/rn-constyle#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "resolutions": {
+    "@types/react": "*"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-native": "^0.73.5"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.6",
+    "typescript": "5.0.4",
+    "react-native-builder-bob": "^0.20.0",
+    "@types/react-native": "^0.70.0"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      [
+        "typescript",
+        {
+          "project": "tsconfig.json"
+        }
+      ]
+    ]
+  }
+}
