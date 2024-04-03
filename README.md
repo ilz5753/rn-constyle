@@ -55,7 +55,7 @@ const RTLExample = () => {
 
 ## License
 
-react-native-style-utils is licensed under the [MIT License](/LICENSE).
+this package licensed under the [MIT License](/LICENSE).
 
 ## Contribution
 
